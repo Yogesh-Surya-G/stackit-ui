@@ -15,7 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
    left: 0px;
    top: 0px;
-   background: radial-gradient(87.1% 87.1% at 54.53% -24.74%, rgba(255, 102, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%) ;/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #1A1A1A;s
+   background: radial-gradient(87.1% 87.1% at 54.53% -24.74%, rgba(255, 102, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #1A1A1A;
 }
 
 * {
