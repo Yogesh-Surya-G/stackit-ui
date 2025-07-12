@@ -1,0 +1,94 @@
+.profile-container {
+  max-width: 900px;
+}
+
+.profile-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--card-bg-color);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-username {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.profile-email {
+  font-size: 16px;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  opacity: 0.7;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  font-family: var(--font-family);
+}
+
+.tab-btn.active {
+  opacity: 1;
+  color: var(--accent-color);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+.profile-content {
+  padding-top: 30px;
+}
+
+.profile-question-card {
+  background-color: var(--card-bg-color);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.profile-q-title {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.profile-q-desc {
+  font-size: 16px;
+  opacity: 0.8;
+  margin: 0;
+}

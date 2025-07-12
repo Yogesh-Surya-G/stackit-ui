@@ -1,0 +1,102 @@
+.create-stack-container {
+  max-width: 900px;
+}
+
+.create-stack-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.stack-name-input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 0;
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 30px;
+  font-family: var(--font-family);
+}
+
+.stack-name-input::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.stack-name-input:focus {
+    outline: none;
+    border-bottom-color: var(--accent-color);
+}
+
+.editor-container {
+  background-color: var(--card-bg-color);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.editor-textarea {
+  width: 100%;
+  height: 300px;
+  background: none;
+  border: none;
+  resize: vertical;
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+.editor-textarea:focus {
+    outline: none;
+}
+.editor-textarea::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+
+.editor-toolbar {
+  margin-top: 20px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar-group {
+    display: flex;
+    gap: 5px;
+}
+
+.toolbar-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  opacity: 0.7;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+}
+.toolbar-btn:hover {
+    background-color: var(--input-bg-color);
+    opacity: 1;
+}
+
+.upload-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.upload-button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}

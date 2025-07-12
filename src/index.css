@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  /* Colors from user prompt */
+  --accent-color: #FF6600;
+  --text-color: #EDE0D4;
+
+  /* NEW: Glassmorphism Colors */
+  --glass-bg: rgba(44, 44, 44, 0.6); /* Semi-transparent background for cards */
+  --glass-border: rgba(237, 224, 212, 0.2); /* Faint border color */
+  --input-bg-color: rgba(30, 30, 30, 0.7);
+
+  /* Font from user prompt */
+  --font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  
+  /* NEW: Vibrant background for the glass effect to show */
+  background: linear-gradient(135deg, #432211, #1a1a1a, #152533);
+  background-size: 400% 400%;
+  animation: gradient-animation 15s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
